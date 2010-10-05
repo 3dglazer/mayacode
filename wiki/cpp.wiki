@@ -4,6 +4,7 @@ C++ syntax and basics. This site covers just native c++ stuff and some STL libra
 =Some useful Data Types=
 == Basic Data Tipes ===
 signed: values both - and +  
+
 unsigned: Just values +
 
 You can use signed and unsigned with all the numeric data tipes:
