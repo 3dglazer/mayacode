@@ -93,7 +93,11 @@ flavour peasoupFlavour=salty;
 }}}
 ==Arrays==
 
-Beware when you specifi the size int a[1]={1}; you use number of elements that the array will have. But when accessed the elements are indexed from 0.
+Beware when you specifi the size, you use number of elements that the array will have. But when accessed the elements are indexed from 0.
+{{{
+int a[1]={1};
+int b=a[0];
+ }}} 
 
 ===Static===
 
