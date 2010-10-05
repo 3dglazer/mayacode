@@ -1,9 +1,6 @@
 #labels Tutorials
 C++ syntax and basics. This site covers just native c++ stuff and some STL library, no Maya API!
 
-= =
-
-
 =Some useful Data Types=
 == Basic Data Tipes ===
 signed: values both - and +  
@@ -139,3 +136,87 @@ array = NULL;     // Clear a to prevent using invalid memory reference.
 *Multi-dimensional*
 
 It's crazy to try to do it you would  work with pointer to pointer to pointers!!! Rather use one dimensional arrays with mapping or some external libraries.
+
+=Operators=
+==Arithmetic==
+{{{
+//adition
+c=a+b;
+//subtraction
+c=a-b;
+//multiplication
+c=a*b;
+// division beware 3/2.0 = 1.5, but 3.0/2 = 1.
+c=a/b;
+// modulus, reminder of a devided by b
+c=a%b;
+
+}}}
+Arithmetic operators can be overloaded so you can use them even with objects (if you specifi their behavior).
+(Greate reference here: [http://www.cs.caltech.edu/courses/cs11/material/cpp/donnie/cpp-ops.html])
+{{{
+  // Add this instance's value to other, and return a new instance
+  // with the result.
+  const MyClass MyClass::operator+(const MyClass &other) const {
+    MyClass result = *this;     // Make a copy of myself.  Same as MyClass result(*this);
+    result += other;            // Use += to add other to the copy.
+    return result;              // All done!
+  }
+}}}
+
+==Compound assignation==
+{{{
+a+=b; // a=a+b;
+a-=b; // a=a-b;
+a*=b; // a=a*b;
+a*=b+c; //a=a*(b+c);
+a/=b; //a=a/b;
+a++; //a=a+1;
+++a; // same as above, but value is changed before the command is executed
+a--; //a=a-1;
+--a; // same as above, but value is changed before the command is executed
+
+
+// refernece to a++ and ++a
+a=3;
+b=a++;
+//b=3 and a=4
+
+a=3;
+b=++a;
+//b=4 and a=4
+
+}}}
+
+==Relational and logical operands==
+*Relational op*
+
+Is acctually a shorter form of if statement.
+{{{
+int a,b;
+// if (a>b){max=a}else{max=b}
+int max=(a>b)?a:b;
+}}
+
+*Logical Operands*
+
+{{{
+//equals
+a==b;
+//not equals
+a!=b;
+//less then
+a<b;
+//more then
+a>b;
+//less then or equal
+a<=b;
+//more then or equal
+a>=b;
+// logical and
+a&&b;
+// logical or | is a "pipe" simbol
+a||b;
+// negation
+!a;
+}}}
