@@ -263,3 +263,15 @@ The following words are reserved, and may not be used as variables...:
     void
     volatile
     while 
+
+=Comments=
+{{{
+//single line comment
+/* multi,
+multi, masacre, cool
+hiper, super
+
+multiline comment
+*/
+
+}}}
