@@ -55,7 +55,8 @@ string  str("C++ is best language");
 str+=" "+"Cool!"
 
 }}}
-==Data Structures==
+==Composite data types==
+===Structures===
 For simple stuff you might prefer to use structers ranther than objects.
 {{{
 //declares structure someStruct o1,o3,o2
@@ -66,7 +67,6 @@ float fl;
 double k;
 }
 o1,o2,o3;
-}}}
 
 // or you can define:
 struct someStruct
@@ -78,6 +78,19 @@ double k;
 // and declare later:
 someStruct o1,o2;
 someStruct o3;
+
+}}}
+
+===Enumerated groups===
+
+Good for encoding some properties:
+{{{
+//This way we specify bitter=4,sweet=5,salty=6,hot=7
+enum flavour{bitter=4,sweet,salty,hot};
+//asigns peasoupFlavour= (int) 6
+flavour peasoupFlavour=salty;
+
+}}}
 ==Arrays==
 
 Beware when you specifi the size int a[1]={1}; you use number of elements that the array will have. But when accessed the elements are indexed from 0.
