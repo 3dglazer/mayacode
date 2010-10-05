@@ -275,3 +275,11 @@ multiline comment
 */
 
 }}}
+
+=Links=
+Information were summerized from prior knowledge and these sources:
+//syntax
+[http://en.wikipedia.org/wiki/C_syntax]
+
+//dynamic array allocation
+[http://www.fredosaurus.com/notes-cpp/newdelete/50dynamalloc.html]
