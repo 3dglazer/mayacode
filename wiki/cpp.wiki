@@ -1,21 +1,67 @@
 #labels Tutorials
-#C++ syntax and basics
+C++ syntax and basics. This site covers just native c++ stuff and some STL library, no Maya API!
 
-=Some useful Data Types =
- 
-signed (values both < 0 and >0) and unsigned (just values >0)
+= =
 
-char - short - int - long
 
-float - double - long double
+=Some useful Data Types=
+== Basic Data Tipes ===
+signed: values both - and +  
+unsigned: Just values +
 
-bool
+You can use signed and unsigned with all the numeric data tipes:
+{{{
+signed int i;
+unsigned double i;
+unsigned int i;
+}}}
 
-=Arrays and composite data types=
+
+*Just whole numbers*
+
+Sorted according the precission.
+
+char < short < int < long
+
+*With floating point precision*
+
+Sorted according the precission.
+
+float < double < long double
+
+*Other data types*
+
+Boolean:
+
+{{{
+bool b=true;
+bool c=false;
+}}}
+
+String:
+
+(c++ has char natively or you can use String object from stl library.)
+
+{{{
+char label[] = "My text.";
+// bevare label array looks like this: | M | y |  | t | e | x | t | . | NULL |  
+
+// Or using String from std Library
+#include <string>
+using namespace std;
+string  str("C++ is best language");
+str+=" "+"Cool!"
+
+}}}
+
 
 ==Arrays==
+
+Beware when you specifi the size int a[1]={1}; you use number of elements that the array will have. But when accessed the elements are indexed from 0.
+
 ===Static===
-Must specifi the size and type:
+
+Must specify the size and type:
 
 *One-dimensional*
 {{{
@@ -29,9 +75,12 @@ float v[3]={1,2.4,5};
 int a[4][4];
 // Initalizes the first Matrix raw to 0 and second to 1
 int table[2][4]={0,0,0,0,1,1,1,1};
+int v[3][4] = { {0,1,2,3}, {10,11,12,13}, {20,21,22,23} };
+
 
 }}}
 ===Dynamic===
+Must specify type, size can be variable.
 
 *One-dimensional*
 {{{
@@ -43,8 +92,10 @@ for (int i=0; i<length; i++) {
     array[i] = 0;    // Initialize all elements to zero.
 }
 
-delete [] array;  // When done, free memory pointed to by a.
+delete [] array;  // When done, free memory pointed to by array.
 array = NULL;     // Clear a to prevent using invalid memory reference.
 }}}
 
 *Multi-dimensional*
+
+It's crazy to try to do it you would  work with pointer to pointer to pointers!!! Rather use one dimensional arrays with mapping or some external libraries.
