@@ -1,4 +1,4 @@
-#labels Tutorials
+#labels Tutorials,CPlusPlus
 C++ syntax and basics. This site covers just native c++ stuff and some STL library, no Maya API!
 
 =Some useful Data Types=
