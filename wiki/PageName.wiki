@@ -1,0 +1,14 @@
+#labels Tutorials
+This is a phread reference. pthread is a library used for creating multithreaded apps in c++. I have created this tutor mainly for my personal learning purpouses. It's just brief overview of it's methods.
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
