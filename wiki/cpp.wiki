@@ -1,0 +1,12 @@
+#labels Tutorials
+#C++ syntax and basics
+
+=Some useful Data Types =
+ 
+signed (values both < 0 and >0) and unsigned (just values >0)
+
+char - short - int - long
+
+float - double - long double
+
+bool
