@@ -197,7 +197,7 @@ Is acctually a shorter form of if statement.
 int a,b;
 // if (a>b){max=a}else{max=b}
 int max=(a>b)?a:b;
-}}
+}}}
 
 *Logical Operands*
 
